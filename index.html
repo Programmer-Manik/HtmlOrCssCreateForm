@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .div1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            gap: 20px;
+            /* width: 50%; */
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="button"],
+        input[type="checkbox"],
+        input[type="color"],
+        input[type="date"],
+        input[type="datetime-local"],
+        input[type="email"],
+        input[type="file"],
+        input[type="hidden"],
+        input[type="image"],
+        input[type="month"],
+        input[type="number"],
+        input[type="password"],
+        input[type="radio"],
+        input[type="range"],
+        input[type="reset"],
+        input[type="search"],
+        input[type="submit"],
+        input[type="tel"],
+        input[type="text"],
+        input[type="time"],
+        input[type="url"],
+        input[type="week"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            width: auto;
+        }
+
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+    
+        input[type="checkbox"]:checked + label,
+        input[type="radio"]:checked + label {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+       
+        input[type="file"] {
+            padding: 6px;
+            width: auto;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        
+
+        input[type="range"] {
+            width: 80%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="POST">
+           
+            <label for="search">Search</label>
+            <input type="search" id="search" placeholder="Search"><br>
+
+            <label for="text">Name</label>
+            <input type="text" id="text" placeholder="Enter Your Name"><br>
+
+            <label for="number">Number</label>
+            <input type="number" id="number" placeholder="Enter a number"><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email"><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password"><br>
+
+            <label for="file">File:</label>
+            <input type="file" id="file"><br><br>
+
+            <label for="tel">Telephone Number</label>
+            <input type="tel" id="tel" placeholder="222-58555"><br><br>
+            
+            <div>
+                    <label>Gender</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+        
+                 
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                  
+                 
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                  
+            </div><br><br>
+            
+            <label for="gender">Curse Choose</label>
+            <select id="gender" name="gender">
+                <option value="">Select</option>
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="js">js</option>
+                <option value="react">react</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            
+            
+             <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea><br>
+                  
+            <label for="month">Project Start Month</label>
+            <input type="month" id="month" placeholder="YYYY-MM"><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" placeholder="YYYY-MM-DD"><br>
+
+            <label for="datetime-local">Datetime Local:</label>
+            <input type="datetime-local" id="datetime-local" placeholder="YYYY-MM-DDTHH:MM"><br>
+
+            <label for="time">Project Start Time:</label>
+            <input type="time" id="time" placeholder="HH:MM"><br>
+
+            <label for="week">Project Start Week:</label>
+            <input type="week" id="week" placeholder="YYYY-W##"><br>
+
+            <label for="url">Project Live Link</label>
+            <input type="url" id="url" placeholder="https://example.com"><br>
+
+            <label for="color">Color:</label>
+            <input type="color" id="color" placeholder="#ffffff"><br>
+
+            <label for="range">Range:</label>
+            <input type="range" id="range"><br><br>
+
+            <div class="div1">
+                <div>
+                    <label for="submit">Submit</label>
+                    <input type="submit" id="submit" value="Submit"><br>
+                </div>
+    
+                <div>
+                    <label for="reset">Reset</label>
+                    <input type="reset" id="reset" value="Reset"><br>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
